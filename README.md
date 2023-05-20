@@ -1,11 +1,7 @@
 # myworld
 myworld repository for Git and Python tutorial
 
-Updated1
+Stable version wiyhout Bootstrap 5
 
-Updated2
 
-Updated3
-
-Updated4
 
