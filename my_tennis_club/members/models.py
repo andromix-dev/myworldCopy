@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Photo(models.Model):
-    image = models.ImageField(upload_to='photos/')
+    image = models.ImageField(upload_to='home/mix/myworldCopy/my_tennis_club/productionfiles/photos/')
     description = models.TextField()
 
 class Member(models.Model):
