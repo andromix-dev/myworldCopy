@@ -31,8 +31,10 @@ def members(request):
 def details(request, slug):
 	mymember = Member.objects.get(slug=slug)
 	template = loader.get_template('details.html')
+	photos = Photo.objects.filter(id=mymember.id).values()[0]
 	context = {
 		'mymember': mymember,
+    	'photos': photos,
 	}
 	return HttpResponse(template.render(context, request))
 def main(request):

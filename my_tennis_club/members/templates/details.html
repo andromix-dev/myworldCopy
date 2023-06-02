@@ -9,8 +9,12 @@
     <h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1>
     <p>Phone {{ mymember.phone }}</p>
     <p>Member since: {{ mymember.joined_date }}</p>
-  <h2>HTML Image</h2>
-<img src="https://www.w3schools.com/html/img_girl.jpg" alt="Girl in a jacket" width="200" height="200">
+
+    <div>
+        <img src="/{{ photos.image }}" alt="{{ photos.description }}"  width="200" height="200">
+        <p>{{ photos.description }}</p>
+    </div>
+
    <ul> <li onclick="window.location = '/members/'">← Back</li></ul>
   </div>
 {% endblock %}
